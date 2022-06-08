@@ -9,8 +9,7 @@ const AlbumList = (props) => {
   const getAlbum = async () => {
     var response = await axios.get(
       'https://api.flickr.com/services/rest/?method=flickr.photosets.getList&api_key=6e8a597cb502b7b95dbd46a46e25db8d&user_id=137290658%40N08&format=json&nojsoncallback=1' ,
-    )
-    debugger;
+    )    
     setPhotoset(response.data.photosets.photoset);
   };
 
